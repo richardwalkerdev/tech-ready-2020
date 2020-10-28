@@ -9,5 +9,5 @@ spec:
     targetPort: 8080-tcp
   to:
     kind: Service
-    name: django-example-1
+    name: django-example-2
     weight: 100
