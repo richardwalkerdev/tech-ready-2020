@@ -15,7 +15,7 @@ spec:
         app: django-example-2
     spec:
       containers:
-        - image: image-registry.openshift-image-registry.svc:5000/tech-ready-project2/tech-ready-demo:latest
+        - image: image-registry.openshift-image-registry.svc:5000/custom-pipeline-project/tech-ready-demo:latest
           imagePullPolicy: Always
           name: django-example-2
           ports:
