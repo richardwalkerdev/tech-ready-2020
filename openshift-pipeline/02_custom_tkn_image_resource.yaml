@@ -1,0 +1,11 @@
+apiVersion: tekton.dev/v1alpha1
+kind: PipelineResource
+metadata:
+  name: django-project-image
+spec:
+  type: image
+  params:
+    - name: url
+      value: 'image-registry.openshift-image-registry.svc:5000/custom-pipeline-project/tech-ready-demo:latest'
+    - name: digest
+      value: 

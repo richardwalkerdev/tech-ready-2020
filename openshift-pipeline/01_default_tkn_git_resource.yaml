@@ -1,0 +1,12 @@
+apiVersion: tekton.dev/v1alpha1
+kind: PipelineResource
+metadata:
+  name: django-project-repo
+  namespace: default-pipeline-project
+spec:
+  params:
+    - name: url
+      value: 'https://github.com/richardwalkerdev/tech-ready-2020.git'
+    - name: revision
+      value: project1
+  type: git
